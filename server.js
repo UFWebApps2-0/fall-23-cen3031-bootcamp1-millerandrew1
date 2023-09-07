@@ -9,8 +9,7 @@ var requestHandler = function(request, response) {
   /*Investigate the request object. 
     You will need to use several of its properties: url and method
   */
- console.log('JDJDJ');
-  response.write('Hui is weak');
+ 
     response.end('Request received!');
 
   /*
