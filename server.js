@@ -9,7 +9,7 @@ var requestHandler = function(request, response) {
   /*Investigate the request object. 
     You will need to use several of its properties: url and method
   */
-  //console.log(request);
+    response.end('Request received!');
 
   /*
     Your request handler should send listingData in the JSON format as a response if a GET request 
@@ -53,10 +53,6 @@ fs.readFile('listings.json', 'utf8', function(err, data) {
   
 
   //Creates the server
-
-
-});
-
   // a server is created, but not started
   var server = http.createServer(requestHandler);
 
@@ -69,3 +65,7 @@ fs.readFile('listings.json', 'utf8', function(err, data) {
   console.log('Is the server started?');
     //Start the server
   
+
+});
+
+
