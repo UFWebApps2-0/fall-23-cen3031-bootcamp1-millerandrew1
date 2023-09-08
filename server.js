@@ -9,7 +9,7 @@ var requestHandler = function(request, response) {
   /*Investigate the request object. 
     You will need to use several of its properties: url and method
   */
- 
+  var parsedURL = url.parse(request.url);
     response.end('Request received!');
 
   /*
