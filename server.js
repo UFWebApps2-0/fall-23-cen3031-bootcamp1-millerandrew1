@@ -11,8 +11,8 @@ var requestHandler = function(request, response) {
     You will need to use several of its properties: url and method
   */
   var parsedURL = url.parse(request.url);
-  console.log('hhh')
-    response.write('Request received!');
+  
+    response.write(listingData);
     response.end('ddd');
 
   /*
