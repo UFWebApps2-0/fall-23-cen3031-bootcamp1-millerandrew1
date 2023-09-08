@@ -33,7 +33,7 @@ var requestHandler = function(request, response) {
     */
 };
 require('fs').readFile('listings.json','utf8',function(err, data){ if (err) throw err; var obj = JSON.parse(data); });
-
+console.log(obj.name);
 fs.readFile('listings.json', 'utf8', function(err, data) {
  
   /*
