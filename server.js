@@ -33,8 +33,8 @@ var requestHandler = function(request, response) {
     */
 };
 
-fs.readFile('C:\Users\Owner\Desktop\Andrew-Miller\GIT\fall-23-cen3031-bootcamp1-millerandrew1\listings.json', 'utf8', function(err, data) {
- var listingData = listings.json.parse(data);
+fs.readFile('listings.json', 'utf8', function(err, data) {
+ var listingData = JSON.parse(data);
  
   /*
     This callback function should save the data in the listingData variable, 
