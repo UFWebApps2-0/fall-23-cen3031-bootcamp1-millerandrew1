@@ -32,10 +32,10 @@ var requestHandler = function(request, response) {
 
     */
 };
+require('fs').readFile('listings.json','utf8',function(err, data){ if (err) throw err; var obj = JSON.parse(data); });
 
 fs.readFile('listings.json', 'utf8', function(err, data) {
-  listingData = listings.json.readFile();
-  console.log(listingData);
+ 
   /*
     This callback function should save the data in the listingData variable, 
     then start the server. 
