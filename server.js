@@ -10,10 +10,12 @@ var requestHandler = function(request, response) {
   /*Investigate the request object. 
     You will need to use several of its properties: url and method
   */
-  var parsedURL = url.parse(request.url);
+  //var parsedURL = url.parse(request.url);
+  //response.end(listingData);
   
-    response.write(listingData);
-    response.end('ddd');
+  response.end(JSON.stringify(listingData));
+    
+  
 
   /*
     Your request handler should send listingData in the JSON format as a response if a GET request 
@@ -37,9 +39,8 @@ var requestHandler = function(request, response) {
 
 fs.readFile('listings.json', 'utf8', function(err, data) {
  listingData = JSON.parse(data);
- JSON.stringify(listingData);
-
- console.log(listingData);
+ 
+ 
   /*
     This callback function should save the data in the listingData variable, 
     then start the server. 
