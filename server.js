@@ -35,7 +35,7 @@ var requestHandler = function(request, response) {
 
 fs.readFile('listings.json', 'utf8', function(err, data) {
  var listingData = JSON.parse(data);
- 
+ console.log(listingData);
   /*
     This callback function should save the data in the listingData variable, 
     then start the server. 
