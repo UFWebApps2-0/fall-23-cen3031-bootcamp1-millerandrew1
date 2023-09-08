@@ -12,6 +12,7 @@ var requestHandler = function(request, response) {
   */
   var parsedURL = url.parse(request.url);
     response.write('Request received!');
+    response.end('ddd');
 
   /*
     Your request handler should send listingData in the JSON format as a response if a GET request 
