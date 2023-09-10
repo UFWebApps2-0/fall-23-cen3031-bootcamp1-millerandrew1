@@ -10,11 +10,15 @@ var requestHandler = function(request, response) {
   /*Investigate the request object. 
     You will need to use several of its properties: url and method
   */
-  //var parsedURL = url.parse(request.url);
-  //response.end(listingData);
-  
-  response.end(JSON.stringify(listingData));
-    
+ 
+ var name = request.url;
+ if(name == '/listings'){
+ response.end(JSON.stringify(listingData));
+ }
+ else{
+  response.writeHead(404);
+  response.end('Bad gateway error - path');
+ }
   
 
   /*
