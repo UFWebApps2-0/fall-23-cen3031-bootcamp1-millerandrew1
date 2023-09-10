@@ -17,7 +17,7 @@ var requestHandler = function(request, response) {
  }
  else{
   response.writeHead(404);
-  response.end('Bad gateway error - path');
+  response.end('Bad gateway error');
  }
   
 
